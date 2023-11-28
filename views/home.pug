@@ -1,0 +1,21 @@
+html
+    head
+        link(rel="stylesheet", href="/styles/home.css")
+        title Home
+    body
+        .header
+            h1 Ask & Answer
+            .create-question
+                form(action="/addQuestion", method="post")
+                    input(type="text", name="question", placeholder="Ask a question")
+                    button(type="submit") Ask
+        .question-list
+            each question in Questions
+                .question
+                    a(href=`/response/${question._id}`)
+                        p= question.question
+
+                    form(action=`/addResponse/${question._id}`, method="post")
+                        textarea(name="response", placeholder="Your response")
+                        button(type="submit") Respond
+

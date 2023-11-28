@@ -1,0 +1,86 @@
+@import 'https://raw.githubusercontent.com/jonathantneal/system-font-css/gh-pages/system-font.css';
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: #3498db;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+}
+
+.create-question {
+    text-align: center;
+    margin-top: 20px;
+
+}
+
+.create-question form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.create-question input {
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #3498db;
+    border-radius: 5px;
+}
+
+.create-question button {
+    padding: 10px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.question-list {
+    margin: 20px;
+}
+
+.question {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align:center;
+
+}
+.question form {
+    margin-top:1rem;
+    display:flex;
+    justify-content: center;
+}
+.question input {
+
+    font: inherit;
+    padding: 0.2em 0.5em;
+
+}
+.question a {
+    text-decoration: none;
+    color: #333;
+    font-size: larger;
+}
+
+.question p {
+    margin: 0;
+}
+.question button {
+    padding: 10px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+}

@@ -1,0 +1,23 @@
+html
+    head
+        link(rel="stylesheet", href="/styles/responses.css")
+        title Responses
+    body
+        .container
+            h1 Responses to Question
+            if question
+                .question
+                    p Question: #{question.question}
+
+                .responses-list
+                    each response in responses
+                        .response
+                            p User: #{response.user_id.email}
+                            p Response: #{response.response}
+            else
+                p No question found
+            form(action=`/addResponse/${question._id}`, method="post")
+                textarea(name="response", placeholder="Your response")
+                button(type="submit") Respond
+
+// Add your styling in a separate CSS file (responses.css)
